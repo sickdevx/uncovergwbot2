@@ -193,7 +193,7 @@ def join_keyboard(gid: str) -> InlineKeyboardMarkup:
 
 def render_post(gw: dict) -> str:
     lines = [
-        f"🎁 <b>{html.escape(gw['title'])}</b>",
+        f" <b>{html.escape(gw['title'])}</b>",
         "",
         f"👤 Hosted by: {html.escape(gw['hosted_by'])}",
         f"👥 Entries: {entry_count(gw)}",
